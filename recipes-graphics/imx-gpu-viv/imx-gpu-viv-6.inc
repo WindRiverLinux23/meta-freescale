@@ -257,6 +257,7 @@ do_install () {
 
     if [ "${IS_MX8}" = "1" ]; then
         if [ -z "${PACKAGES_VULKAN}" ]; then
+	    rm ${D}${libdir}/libvulkan.so*
             set -f
             for f in ${FILES:libvulkan-imx} ${FILES:libvulkan-imx-dev}; do
                 set +f
