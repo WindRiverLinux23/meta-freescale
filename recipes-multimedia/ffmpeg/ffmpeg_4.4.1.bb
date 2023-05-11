@@ -182,4 +182,4 @@ INSANE_SKIP:${MLPREFIX}libpostproc = "textrel"
 
 # Downgrade for NXP BSP
 DEFAULT_PREFERENCE = "-1"
-COMPATIBLE_MACHINE = "(imx-nxp-bsp)"
+COMPATIBLE_MACHINE = "(imx-nxp-bsp|mx8-nxp-bsp)"
