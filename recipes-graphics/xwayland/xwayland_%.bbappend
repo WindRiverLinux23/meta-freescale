@@ -11,7 +11,10 @@ OPENGL_PKGCONFIGS_REMOVE_IMXGPU:mx6-nxp-bsp = "glamor glx"
 OPENGL_PKGCONFIGS_REMOVE_IMXGPU:mx7-nxp-bsp = "glamor glx"
 OPENGL_PKGCONFIGS_REMOVE_IMXGPU:mx8-nxp-bsp = "glx"
 
-PACKAGECONFIG[glamor] = "-Dglamor=true,-Dglamor=false,libepoxy virtual/libgbm,libegl-imx"
+LIBEGL ?= "libegl"
+LIBEGL:imxgpu = "libegl-imx"
+
+PACKAGECONFIG[glamor] = "-Dglamor=true,-Dglamor=false,libepoxy virtual/libgbm,${LIBEGL}"
 
 # links with imx-gpu libs which are pre-built for glibc
 # gcompat will address it during runtime
