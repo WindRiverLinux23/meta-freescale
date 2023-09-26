@@ -1,5 +1,5 @@
 DESCRIPTION = "CEETM TC QDISC"
-LICENSE = "GPL-2.0-only & BSD"
+LICENSE = "GPL-2.0-only & BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://COPYING;md5=bac620b9883d38a84dfb73ca7122d915"
 
 SRC_URI = "git://github.com/nxp-qoriq/ceetm;protocol=https;nobranch=1"
