@@ -87,4 +87,4 @@ do_install_ptest_base() {
     install -m 0755 ${B}/test-alloc ${D}${PTEST_PATH}
 }
 
-COMPATIBLE_MACHINE = "(imx-nxp-bsp)"
+COMPATIBLE_MACHINE = "(imx-nxp-bsp|mx8-nxp-bsp)"
